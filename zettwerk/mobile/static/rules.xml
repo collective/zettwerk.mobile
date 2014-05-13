@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules
+    xmlns="http://namespaces.plone.org/diazo"
+    xmlns:css="http://namespaces.plone.org/diazo/css"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+  <theme href="blank.html" />
+
+  <replace css:theme="title" css:content="title" />
+  <replace css:theme="base" css:content="base" />
+
+  <drop theme="/html/head/meta" />
+  <after content="/html/head/meta" theme-children="/html/head" />
+
+  <after
+      content="/html/head/style | /html/head/script | /html/head/link"
+      theme-children="/html/head"
+      />
+
+  <merge attributes="class" css:content="body" css:theme="body" />
+  <copy attributes="id dir" css:content="body" css:theme="body" />
+
+  <replace css:content='#portal-globalnav li' css:theme-children='#global-navigation' />
+
+  <replace css:content-children="#content" css:theme-children="#content" />
+
+  <!-- <replace css:content-children="#portal-column-one" css:theme-children="#slot_left" /> -->
+  <!-- <replace css:content-children="#portal-column-content" css:theme-children="#slot_main" /> -->
+  <!-- <replace css:content-children="#portal-column-two" css:theme-children="#slot_right" /> -->
+
+  <before css:content=".portalMessage" css:theme="#content" />
+
+  <replace css:content='#portal-footer' css:theme-children='#footer' />
+
+
+
+</rules>

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<componentregistry>
+  <adapters>
+    <adapter
+	provides="plone.transformchain.interfaces.ITransform"
+        factory="zettwerk.mobile.transform.MobileThemeTransform"
+	for="zope.interface.Interface plone.app.theming.interfaces.IThemingLayer"
+        />
+  </adapters>
+</componentregistry>

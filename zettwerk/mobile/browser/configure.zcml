@@ -1,0 +1,19 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="zettwerk.mobile">
+
+  <browser:page
+      name="mobile-theming-controlpanel"
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      class=".controlpanel.SettingsControlPanelForm"
+      permission="cmf.ManagePortal"
+      />
+
+  <interface
+      interface=".interfaces.IThemeSpecific"
+      type="zope.publisher.interfaces.browser.IBrowserSkinType"
+      name="Zettwerk mobile"
+      />
+
+</configure>
