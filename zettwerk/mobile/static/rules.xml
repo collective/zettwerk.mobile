@@ -2,36 +2,58 @@
 <rules
     xmlns="http://namespaces.plone.org/diazo"
     xmlns:css="http://namespaces.plone.org/diazo/css"
-    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-
-  <theme href="blank.html" />
-
-  <replace css:theme="title" css:content="title" />
-  <replace css:theme="base" css:content="base" />
-
-  <drop theme="/html/head/meta" />
-  <after content="/html/head/meta" theme-children="/html/head" />
-
-  <after
-      content="/html/head/style | /html/head/script | /html/head/link"
-      theme-children="/html/head"
-      />
-
-  <merge attributes="class" css:content="body" css:theme="body" />
-  <copy attributes="id dir" css:content="body" css:theme="body" />
-
-  <replace css:content='#portal-globalnav li' css:theme-children='#global-navigation' />
-
-  <replace css:content-children="#content" css:theme-children="#content" />
-
-  <!-- <replace css:content-children="#portal-column-one" css:theme-children="#slot_left" /> -->
-  <!-- <replace css:content-children="#portal-column-content" css:theme-children="#slot_main" /> -->
-  <!-- <replace css:content-children="#portal-column-two" css:theme-children="#slot_right" /> -->
-
-  <before css:content=".portalMessage" css:theme="#content" />
-
-  <replace css:content='#portal-footer' css:theme-children='#footer' />
-
-
-
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    >
+    
+    <!-- Note:
+     
+     this is a test theme (Espen Moe-Nilssen)
+     
+     -->
+    
+    
+    <before
+    css:theme="div#footer"
+    content="//div[@id='portal-colophon']"
+    />
+    
+    <rules >
+        
+        <theme href="theme.html" />
+        
+        <!--Head-->
+        <copy css:content="html" css:theme="html" attributes="lang dir" />
+        <copy css:content="head base" css:theme="head base" />
+        <replace css:content="head title" css:theme="head title" />
+        <before css:content="head style, head link, head script, head meta" css:theme-children="head" />
+        
+        <!-- Tabs -->
+        <replace css:theme-children="#tabs" css:content-children="#portal-globalnav" />
+        
+        <after
+        css:theme="#tabs"
+        css:content="#portal-subnavbar"
+        />
+        
+        <!-- Search -->
+        <copy attributes="action" css:theme="#searchbox" css:content="#portal-searchbox form" />
+        <copy attributes="name" css:theme="#searchbox .search-query" css:content="#portal-searchbox form .searchField" />
+        
+        
+        <!-- Portal messages -->
+        <!-- Main columns -->
+        <drop css:content="#slider-container"  />
+        
+        <replace css:content-children="#content" css:theme-children="#content" />
+        <replace css:content-children="#parent-fieldname-title" css:theme="#titlen" />
+        
+        <replace css:content-children="#portal-column-one" css:theme-children="#left-column" />
+        <replace css:content-children="#portal-column-two" css:theme-children="#right-column" />
+        
+        
+        <!-- Footer -->
+        
+        
+    </rules>
+    
 </rules>

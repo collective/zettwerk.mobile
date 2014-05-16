@@ -1,0 +1,173 @@
+ 
+ 
+/* Theme-specific styling
+ */
+
+#toggle-navigation {position: absolute; left:12px; top: 12px}
+ 
+ div.container {
+    clear: both;
+}
+
+/* Tabs */
+
+a#portal-logo {
+    width: 100%;
+    background-color: #233b57;
+ 
+}
+
+
+#portal-colophon p{
+    font-size: 110%;
+	line-height: 130%;
+}
+
+a#portal-logo img {
+	margin:9px auto 8px;
+	float:  none;
+	display: block;
+}
+
+div#content.span8 #parent-fieldname-description {
+	font-weight: normal;
+	font-style: normal;
+	border-bottom-width: 1px;
+	border-bottom-style: dashed;
+	padding-bottom: 30px;
+}
+ 
+ 
+
+#portal-subnavbar {
+	padding: 0;
+	text-align: center;
+}
+
+#portal-subnavbar li  {
+	margin:  0;
+	width: 100%;
+	
+}
+
+ 
+#portal-subnavbar li a {
+	margin:  0 5px 3px;
+	display:  block;
+	padding: 8px !important;
+	font-size: 110%;
+    background: whitesmoke;
+	background: linear-gradient(to bottom, #FFFFFF 0%, #E1E1E1 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    color:  #666;
+  }
+
+ul#tabs.nav {
+ padding: 0;    
+}
+
+#tabs li  {
+    color: white;
+    text-decoration: none;
+    background: #c42328;
+    padding: 7px 14px;
+    text-align: center;
+    font-size: 16px;
+	list-style-image: none;
+	list-style-type: none;
+	border-radius: 4px;
+	margin: 3px 5px;
+}
+
+li#portaltab-home {
+	background-color: #66a4d3;
+}
+
+li#portaltab-news {
+	background-color: #ebaf28;
+}
+
+li#portaltab-map {
+	background-color: #73a238;
+}
+
+
+#tabs a {
+    color: white;
+    text-decoration: none;
+}
+ 
+ 
+
+
+
+/* searchbox */
+
+#searchbox input {
+    padding: 9px 5%;
+    width: 90%;
+}
+
+
+/* Footer */
+
+#footer {
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: solid #eee 1px;
+}
+
+#footer li {
+    list-style: none;
+}
+
+#portal-siteactions li {
+    display: inline;
+    margin: 0 5px;
+}
+
+.span8 {
+    background: white;
+	padding: 10px;
+} 
+
+div#content.span8 {
+    background: white;
+}
+
+div.contactinfo {
+	background: white;
+	padding-bottom: 10px;
+}
+
+a.btn.button {
+	width: 94%;
+	margin-top: 15px;
+	margin-bottom: 0;
+	margin-left: 3%;
+	padding: 0.5em 0;
+	background: linear-gradient(to bottom, #FFFFFF 0%, #E1E1E1 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border-radius: 5px;
+ 
+}
+}
+
+
+#content-core img {
+	max-width: 100%;
+}
+
+#right-column {
+	background: whitesmoke;
+}
+
+ .portletQRPortlet {
+	display: none;
+}
+
+
+img {
+border: 0px;
+max-width: 100%;
+}
