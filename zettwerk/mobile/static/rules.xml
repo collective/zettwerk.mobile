@@ -4,37 +4,24 @@
     xmlns:css="http://namespaces.plone.org/diazo/css"
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     >
-    
-    <!-- Note:
-     
-     this is a test theme (Espen Moe-Nilssen)
-     
-     -->
-    
-    
-    <rules >
+   
+   <rules >
         
         <theme href="theme.html" />
         
         <!--Head-->
-        <copy css:content="html" css:theme="html" attributes="lang dir" />
-        <copy css:content="head base" css:theme="head base" />
-        <replace css:content="head title" css:theme="head title" />
         <before css:content="head style, head link, head script, head meta" css:theme-children="head" />
         
-        <!-- Top -->
-        <replace
-            css:theme-children="div#header-placeholder"
-            css:content-children="div#portal-header"
-            />
+        <replace css:content="#portal-logo" css:theme="#portal-logo" />
+        <replace css:content="#portal-globalnav" css:theme="#portal-globalnav" />
+        <replace css:content="#portal-searchbox" css:theme="#portal-searchbox" />
         
         
-        <!-- Main columns -->
-        <!--  drop css:content="#slider-container"  /-->
+        <replace css:content="ul.mobileButtons" css:theme="ul.mobileButtons" />
         
-        <replace css:content="#content-placeholder" css:theme-children="#content" />
-        
-        
+        <!--main -->
+        <replace css:content-children="#portal-column-content" css:theme-children="#column-content" />
+
         
     </rules>
     
