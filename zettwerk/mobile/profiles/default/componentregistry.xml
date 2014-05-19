@@ -2,9 +2,9 @@
 <componentregistry>
   <adapters>
     <adapter
-	provides="plone.transformchain.interfaces.ITransform"
+		provides="plone.transformchain.interfaces.ITransform"
         factory="zettwerk.mobile.transform.MobileThemeTransform"
-	for="zope.interface.Interface plone.app.theming.interfaces.IThemingLayer"
-        />
+		for="zope.interface.Interface plone.app.theming.interfaces.IThemingLayer"
+    />
   </adapters>
 </componentregistry>

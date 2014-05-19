@@ -3,6 +3,13 @@
     xmlns:browser="http://namespaces.zope.org/browser"
     i18n_domain="zettwerk.mobile">
 
+
+  <interface
+      interface=".interfaces.IThemeSpecific"
+      type="zope.publisher.interfaces.browser.IBrowserSkinType"
+      name="Zettwerk mobile"
+      />
+      
   <browser:page
       name="mobile-theming-controlpanel"
       for="Products.CMFPlone.interfaces.IPloneSiteRoot"
@@ -10,10 +17,13 @@
       permission="cmf.ManagePortal"
       />
 
-  <interface
-      interface=".interfaces.IThemeSpecific"
-      type="zope.publisher.interfaces.browser.IBrowserSkinType"
-      name="Zettwerk mobile"
-      />
+  <browser:page
+      name="mobile-redirect.js"
+		for="*"
+        class=".view.JavaScript"
+        permission="zope2.View"
+    />
+
+
 
 </configure>
