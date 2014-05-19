@@ -12,11 +12,6 @@
      -->
     
     
-    <before
-    css:theme="div#footer"
-    content="//div[@id='portal-colophon']"
-    />
-    
     <rules >
         
         <theme href="theme.html" />
@@ -27,31 +22,18 @@
         <replace css:content="head title" css:theme="head title" />
         <before css:content="head style, head link, head script, head meta" css:theme-children="head" />
         
-        <!-- Tabs -->
-        <replace css:theme-children="#tabs" css:content-children="#portal-globalnav" />
-        
-        <after
-        css:theme="#tabs"
-        css:content="#portal-subnavbar"
-        />
-        
-        <!-- Search -->
-        <copy attributes="action" css:theme="#searchbox" css:content="#portal-searchbox form" />
-        <copy attributes="name" css:theme="#searchbox .search-query" css:content="#portal-searchbox form .searchField" />
+        <!-- Top -->
+        <replace
+            css:theme-children="div#header-placeholder"
+            css:content-children="div#portal-header"
+            />
         
         
-        <!-- Portal messages -->
         <!-- Main columns -->
-        <drop css:content="#slider-container"  />
+        <!--  drop css:content="#slider-container"  /-->
         
-        <replace css:content-children="#content" css:theme-children="#content" />
-        <replace css:content-children="#parent-fieldname-title" css:theme="#titlen" />
+        <replace css:content="#content-placeholder" css:theme-children="#content" />
         
-        <replace css:content-children="#portal-column-one" css:theme-children="#left-column" />
-        <replace css:content-children="#portal-column-two" css:theme-children="#right-column" />
-        
-        
-        <!-- Footer -->
         
         
     </rules>

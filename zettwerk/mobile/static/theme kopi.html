@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Mobile Theme</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+     <link href="++theme++zettwerk.mobile/assets/theme.css" rel="stylesheet">
+          <script language="javascript" type="text/javascript">
+          $(document).ready(function() {
+                $('#toggle-navigation').click(function() {
+                    $('.navbar-fixed-top').toggle();
+                });
+
+            });
+    
+          </script>
+ 
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <a id="portal-logo" 
+        title="Logo" 
+        accesskey="1" href="/">
+    <img src="logo.png" 
+    alt="Logo" 
+    title="Logo" 
+    height="auto" width="100%"></a>
+  <div>    
+    <img id="toggle-navigation" alt="togle-navigationo" 
+        src="++theme++zettwerk.mobile/assets/toggle-navigation.png"></div>
+    </div>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <ul id="tabs" class="nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <ul id="mobileButtons">
+          </ul>
+        </div>
+      </div>
+         <div id="subnavbar"></div>
+    </div>
+    
+
+  
+    <div class="container">
+
+      <div class="row">
+        <div class="span2" id="left-column">
+          Left column
+        </div>
+        <div class="span8" id="content">
+          <h1 id="titlen">Main content</h1>
+          <p>
+            Main content placeholder
+          </p>
+       </div>
+ 
+        <div class="offset10" id="right-column">
+          Right column
+        </div>
+      </div>
+<div class="contactinfo">
+<div data-interaction="Interaction - Click To Call">
+  <a class="btn button " href="#">Bergen: +47 55 33 75 00</a>
+    <a class="btn button " href="#">Austevoll: +47 56 18 20 00</ 
+  </div>
+<div data-interaction="Interaction - Click To Map"><a class="btn button " href="http://maps.google.no/m " target="_blank">KMap</a></div>
+<div data-interaction="Interaction - Click To Full Version">
+<a class="btn button " href="http://www.mysite.com/?fullweb=1">Vis webversjon</a></div>
+</div>
+      <div class="row">
+        <div  id="footer">
+          Footer content
+        </div>
+      </div>
+
+    </div> <!-- /container -->
+</body>
+</html>
