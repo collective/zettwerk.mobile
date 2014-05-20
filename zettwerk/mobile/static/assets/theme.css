@@ -160,6 +160,10 @@ button,input{line-height:normal;}
 button,input[type="button"],input[type="reset"],input[type="submit"]{cursor:pointer;-webkit-appearance:button;*overflow:visible;}
 button[disabled],input[disabled]{cursor:default;}
 
+.contakt-info {
+	padding-left: 10px;
+	padding-right: 10px;
+}
 .contakt-info a.btn.button { 
 	border: 1px solid #C9C9C9;
 	-webkit-border-radius: 5px; 
@@ -168,10 +172,11 @@ button[disabled],input[disabled]{cursor:default;}
 	-webkit-box-shadow: 0 8px 6px -6px #444; 
 	box-shadow: 0 8px 6px -6px #444; 
 	padding: 5px 8px 5px; 
-	margin-bottom: 12px;
+	margin: 0 0 18px;
 	display: block;
 	text-align: center;
-	color:  #444;;
+	color:  #444;
+	width:  auto;;
 }
 
 .contakt-info p {
