@@ -4,8 +4,8 @@
     xmlns:css="http://namespaces.plone.org/diazo/css"
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     >
-   
-   <rules >
+    
+    <rules >
         
         <theme href="theme.html" />
         
@@ -19,9 +19,8 @@
         
         <replace css:content="ul.mobileButtons" css:theme="ul.mobileButtons" />
         
-        <!--main -->
-        <replace css:content-children="#portal-column-content" css:theme-children="#column-content" />
-
+        <!--main done by rules-->
+        <replace css:content="#content" css:theme="#portal-column-content" />
         
     </rules>
     

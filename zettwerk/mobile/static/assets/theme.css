@@ -1,11 +1,13 @@
 /* @override 
 	http://localhost:8080/zettwww/front-page/++theme++zettwerk.mobile/assets/theme.css
 	http://localhost:8080/zettwww/Members/++theme++zettwerk.mobile/assets/theme.css
+	http://localhost:8080/sdfasdfds/++theme++zettwerk.mobile/++theme++zettwerk.mobile/assets/theme.css
 */
 
 /* Theme-specific styling
  */
 
+ 
 .Xnavbar-fixed-top {
 	display: none;
 }
@@ -157,6 +159,38 @@ button,input,select,textarea{font-size:100%;margin:0;vertical-align:baseline;*ve
 button,input{line-height:normal;}
 button,input[type="button"],input[type="reset"],input[type="submit"]{cursor:pointer;-webkit-appearance:button;*overflow:visible;}
 button[disabled],input[disabled]{cursor:default;}
+
+.contakt-info a.btn.button { 
+	border: 1px solid #C9C9C9;
+	-webkit-border-radius: 5px; 
+	border-radius: 5px; 
+	background-color: #f9f9f9; 
+	-webkit-box-shadow: 0 8px 6px -6px #444; 
+	box-shadow: 0 8px 6px -6px #444; 
+	padding: 5px 8px 5px; 
+	margin-bottom: 12px;
+	display: block;
+	text-align: center;
+	color:  #444;;
+}
+
+.contakt-info p {
+	text-align: center;
+	font-size: 90%;
+}
+
+.mobileButtons a#toggle_navigation {
+	background: white url(++theme++zettwerk.mobile/assets/1400610971_menu-24.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.mobileButtons a#toggle_search {
+	background: white url(++theme++zettwerk.mobile/assets/1400613794_11_Search.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
 input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0;*height:13px;*width:13px;}
 input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}
 input[type="search"]::-webkit-search-decoration,input[type="search"]::-webkit-search-cancel-button{-webkit-appearance:none;}
@@ -184,11 +218,5 @@ p {font-size:1.2em; line-height:1.5em}
 	position:absolute;
 	top:0; left:0;
 }
-.info a:before,.info span:before,.info .span:before{background:url('../images/info.png') no-repeat;}
-.home a:before,.home span:before,.home .span:before{background:url('../images/home.png') no-repeat;}
-.gear a:before,.gear span:before,.gear .span:before{background:url('../images/gear.png') no-repeat;}
-.bubble a:before,.bubble span:before,.bubble .span:before{background:url('../images/bubble.png') no-repeat;}
-.add a:before,.add span:before,.add .span:before{background:url('../images/add.png') no-repeat;}
-.call a:before,.call span:before,.call .span:before{background:url('../images/call.png') no-repeat;}
-.navigation a:before,.navigation span:before,.navigation .span:before{background:url('../images/navigation.png') no-repeat;}
-.mail a:before,.mail span:before,.mail .span:before{background:url('../images/mail.png') no-repeat;}
+
+
