@@ -10,7 +10,7 @@
         <theme href="theme.html" />
         
         <!--Head-->
-        <before css:content="head link, head script, head meta" css:theme-children="head" />
+        <before css:content="head link, head script, head meta"   />
         
         <replace css:content="#portal-logo" css:theme="#portal-logo" />
         <replace css:content="#portal-globalnav" css:theme="#portal-globalnav" />
