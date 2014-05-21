@@ -12,7 +12,10 @@
     clear: both;
 }
 
-/* Tabs */
+
+body.mobileNaviLoaded {
+	background: white;	
+}
 
 body.mobileNaviLoaded a#portal-logo {
     width: 100%; 

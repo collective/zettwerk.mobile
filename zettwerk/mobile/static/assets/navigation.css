@@ -74,13 +74,13 @@ div.slideNavi.loading,
 }
 
 .mobileButtons a#toggle_navigation {
-	background: white url(++theme++zettwerk.mobile/assets/1400610971_menu-24.png);
+	background: white url(++theme++zettwerk.mobile/assets/images/1400610971_menu-24.png);
 	background-position: center;
 	background-repeat: no-repeat;
 }
 
 .mobileButtons a#toggle_search {
-	background: white url(++theme++zettwerk.mobile/assets/1400613794_11_Search.png);
+	background: white url(++theme++zettwerk.mobile/assets/images/1400613794_11_Search.png);
 	background-position: center;
 	background-repeat: no-repeat;
 }
