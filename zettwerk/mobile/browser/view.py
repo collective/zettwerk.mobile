@@ -11,8 +11,8 @@ class JavaScript(BrowserView):
         
         return """\
             var mobile_domain = "%(hostname)s";
-            var ipad = %(ipad)s;
-            var other_tablets = %(tablets)s;
+            var ipad = "%(ipad)s";
+            var other_tablets = "%(tablets)s";
             document.write(unescape("%%3Cscript src='"+location.protocol+"//s3.amazonaws.com/me.static/js/me.redirect.min.js' type='text/javascript'%%3E%%3C/script%%3E"));
             """ % {
                 'hostname': self.hostname,
