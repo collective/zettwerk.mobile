@@ -17,10 +17,11 @@
         <replace css:content="#portal-searchbox" css:theme="#portal-searchbox" />
         
         
-        <replace css:content="ul.mobileButtons" css:theme="ul.mobileButtons" />
-        
         <!--main done by rules-->
         <replace css:content="#content" css:theme="#portal-column-content" />
+        
+        <replace css:content="ul.mobileButtons" css:theme="ul.mobileButtons" />
+        
         
     </rules>
     
