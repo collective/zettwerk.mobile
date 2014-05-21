@@ -1,9 +1,8 @@
 zettwerk.mobile
 ===============
 
-Use jquery.mobile with Plone - Apply theme by given hostname(s).
+Apply theme by given hostname(s).
 
-example: https://www.youtube.com/watch?v=pwAjqBmdgNk
 
 Important
 =========
@@ -13,8 +12,26 @@ This is a really rough prototype. Do not use in production instances. Also, ther
 Usage
 =====
 
-Install zettwerk.mobile via quickinstaller. Open the view by entering the url: <your_plone_instance>/@@mobile-theming-controlpanel
+Install zettwerk.mobile via quickinstaller. 
+A new control panel entry makes it possible to change settings.
 
-Enter the hostnames on which the mobile theme should be applied. It is also possible to give an own theme name. As default, the zettwerk.mobile theme is used, which is based on jquery.mobile.
+Enter the hostnames on which the mobile theme should be applied. It is also possible to give a own theme name. 
+As default, the zettwerk.mobile theme is used.
+There is also some settings for "redirecting urls", it works like this:
 
-Open your plone instance in a browser, given the hostname you applied.
+1) A javascript is installed in portal_javascript
+2) This javascript redirects urls starting with 'www' to the url set in the control panel.
+3) Redirects works for mobile devices.
+4) You can choose if you want to redirect iPads and tablets, too.
+
+
+Example Setup
+=============
+
+1) Point www.mydomain.com to "myplonesite"
+2) Point m.mydomain.com   to "myplonesite"
+3) Add "m.mydomain" as the first entry in the control panel
+4) Leave "iPad" and "tablet" settings off unless you have a good reason
+5) Visit www.mydomain.com with you phone. It should redirect to "m.mydomain.com" which has the mobile theme.
+
+

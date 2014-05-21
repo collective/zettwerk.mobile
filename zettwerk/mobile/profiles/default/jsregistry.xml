@@ -1,16 +1,11 @@
 <?xml version="1.0"?>
 <object name="portal_javascripts">
- <!-- <javascript -->
- <!--    id="++theme++zettwerk.ui/gui.js" -->
- <!--    cacheable="True" compression="safe" cookable="True" -->
- <!--    enabled="True" expression=""  inline="False"/> -->
- <!-- <javascript -->
- <!--    id="++resource++jquery.mobile/jquery.mobile-1.0rc2.js" -->
- <!--    cacheable="True" compression="safe" cookable="True" -->
- <!--    enabled="True" expression=""  inline="False"/> -->
- <!-- <javascript -->
- <!--     insert-after="jquery.js" -->
- <!--     id="++resource++jquery.mobile/jquery-1.6.4.min.js" -->
- <!--     cacheable="True" compression="none" cookable="True" -->
- <!--     enabled="True" expression=""  inline="False"/> -->
+
+    <javascript id="mobile-redirect.js"
+ 		cacheable="True" compression="safe" cookable="True" 
+ 		enabled="True"
+         expression="python: 'http://www' in (request.get('ACTUAL_URL'))"
+         inline="False"/>
+ 		
+        
 </object>

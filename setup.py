@@ -34,6 +34,7 @@ setup(name='zettwerk.mobile',
       zip_safe=False,
       install_requires=[
           'setuptools',
+          'ftw.mobilenavigation',
           # -*- Extra requirements: -*-
       ],
       extras_require={'test': ['plone.app.testing']},

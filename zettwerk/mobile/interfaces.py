@@ -22,3 +22,15 @@ class IMobileSettings(Interface):
         description=_('The name of the mobile theme.'),
         default=u'zettwerk.mobile',
         )
+
+    ipad = schema.Bool(
+        title=_('ipad', 'Redirect iPads'),
+        description=_('Set to false to not redirect on iPad.'),
+        default=False,
+        )
+
+    tablets = schema.Bool(
+        title=_('tablets', 'Redirect Other Tablets'),
+        description=_('Set to false to not redirect on other tablets (Android , BlackBerry, WebOS tablets)'),
+        default=False,
+        )
