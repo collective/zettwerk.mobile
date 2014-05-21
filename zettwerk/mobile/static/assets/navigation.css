@@ -1,0 +1,168 @@
+ 
+/* @group buttons */
+
+.mobileButtons {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+}
+.mobileButtons a {
+  width: 24px;
+  height: 24px;
+  padding: 16px;
+  display: block;
+  background: url(++resource++ftw.mobilenavigation/mobile_buttons.png) no-repeat center center #aaa;
+  float: right;
+}
+ 
+
+/* @end group */
+
+/* @group mobile navigation */
+
+div.slideNavi.loading,
+.globalnav,
+#portal-globalnav.mobileNavigation {
+  position:absolute;
+  top: 0;
+  display: none;
+  z-index: 5;
+  background: white;
+  padding-bottom: 13px;
+}
+
+
+#portal-globalnav.mobileNavigation li {
+  display: block;
+  margin: 5px; 
+  position: relative;
+  border:  1px solid #aaa;
+  border-radius: 5px;
+  moz-border-radius: 5px;
+  background: linear-gradient(to bottom, #FFFFFF 0%, #E1E1E1 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+#portal-globalnav.mobileNavigation li.expanded:hover {
+	  background: linear-gradient(to bottom, #FFFFFF 0%, #E1E1E1 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+
+}
+
+#portal-globalnav.mobileNavigation li.expanded a:hover {
+	color:  #000;
+	font-weight: bold;
+}
+
+ 
+#portal-globalnav.mobileNavigation li a {
+  background: transparent;
+  padding: 10px 3%;
+  color: #333;
+  width: auto;
+  line-height: 20px;
+  font-size:120%;
+  display: block;
+
+}
+#portal-globalnav.mobileNavigation li:hover {
+	  background: linear-gradient(to bottom, #DDD 0%, #777 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+ 
+#portal-globalnav.mobileNavigation li a:hover {
+  color: #FFF;
+}
+ 
+.globalnav li a.slide,
+.globalnav li.noChildren a,
+#portal-globalnav.mobileNavigation li.noChildren a,
+#portal-globalnav.mobileNavigation li a.loadChildren {
+  margin-right: 0;
+
+ 
+}
+ 
+
+#portal-globalnav.mobileNavigation li a.loadChildren  {
+background: url(++resource++ftw.mobilenavigation/expandme-navi.png) no-repeat center center;
+position: absolute;
+ width: 60px;
+ font-size: 1px;
+ padding-left: 0;
+ padding-right: 0;
+ top:  0;
+ right: 0px;
+      
+ }
+#portal-globalnav.mobileNavigation li.expanded > a.loadChildren {
+  background: url(++resource++ftw.mobilenavigation/collapseme-navi.png) no-repeat center center;
+
+}
+#portal-globalnav.mobileNavigation li.loading > a.loadChildren {
+  background: url(++resource++ftw.mobilenavigation/spinner.gif) no-repeat center center;
+}
+#portal-globalnav.mobileNavigation li > ul {
+  display: none;
+}
+#portal-globalnav.mobileNavigation li.expanded > ul {
+  display: block;
+}
+ 
+ 
+/* @end */
+
+ 
+
+/* @group responsive */
+
+@media screen and (max-width: 769px) {
+  .mobileButtons {
+    display: block;
+    z-index: 4;
+  }
+  #portal-globalnav,
+  #portal-personaltools dt.actionMenuHeader,
+  #portal-searchbox {
+    display: none;
+    padding: 0;
+  }
+
+ul#portal-globalnav.mobileNavigation {
+	width: 100%;
+}
+
+  #portal-personaltools {
+    width: 100%;
+    position: absolute;
+    margin-top: 52px;
+    background-color: transparent;
+  }
+
+  #portal-personaltools a {
+    font-size: 150%;
+  }
+
+  #portal-searchbox {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 54px;
+    background: #EEE;
+    z-index: 3;
+    padding: 1em;
+  }
+}
+@media screen and (min-width: 770px) {
+  /* fix navi (ugly) */
+ul#portal-globalnav.mobileNavigation  {
+    display: block;
+    
+  }
+  .globalnav,
+ul#portal-globalnav.mobileNavigation  > li.expanded > ul,
+ul#portal-globalnav.mobileNavigation  .loadChildren {
+    display: none ;
+  }
+}
+
+/* @end */

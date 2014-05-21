@@ -5,6 +5,13 @@
  		cacheable="True" compression="safe" cookable="True" 
  		enabled="True"
          expression="python: 'http://www' in (request.get('ACTUAL_URL'))"
-         inline="False"/>
- 		
+         inline="False" />
+
+    <javascript id="mobile-redirect.js"
+        cacheable="True" compression="safe" cookable="True"
+        enabled="True"  expression=""
+        inline="False" />
+
+    <javascript id="++resource++ftw.mobilenavigation/expand_navigation.js"
+        enabled="False" />
 </object>
