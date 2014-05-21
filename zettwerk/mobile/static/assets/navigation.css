@@ -72,14 +72,30 @@ div.slideNavi.loading,
 #portal-globalnav.mobileNavigation li a:hover {
   color: #FFF;
 }
+
+.mobileButtons a#toggle_navigation {
+	background: white url(++theme++zettwerk.mobile/assets/1400610971_menu-24.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.mobileButtons a#toggle_search {
+	background: white url(++theme++zettwerk.mobile/assets/1400613794_11_Search.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.mobileButtons a#toggle_usermenu {
+	background: white url(++theme++zettwerk.mobile/assets/IcoMoon/Icons/png/32px/lock.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
  
 .globalnav li a.slide,
 .globalnav li.noChildren a,
 #portal-globalnav.mobileNavigation li.noChildren a,
 #portal-globalnav.mobileNavigation li a.loadChildren {
   margin-right: 0;
-
- 
 }
  
 

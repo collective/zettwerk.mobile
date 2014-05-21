@@ -8,7 +8,7 @@
 
     <stylesheet id="++theme++zettwerk.mobile/assets/navigation.css"
             media=""
-            enabled="True"
+            enabled="False"
         />
 
 </object>

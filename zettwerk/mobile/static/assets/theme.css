@@ -1,8 +1,3 @@
-/* @override 
-	http://localhost:8080/zettwww/front-page/++theme++zettwerk.mobile/assets/theme.css
-	http://localhost:8080/zettwww/Members/++theme++zettwerk.mobile/assets/theme.css
-	http://localhost:8080/sdfasdfds/++theme++zettwerk.mobile/++theme++zettwerk.mobile/assets/theme.css
-*/
 
 /* Theme-specific styling
  */
@@ -182,18 +177,6 @@ button[disabled],input[disabled]{cursor:default;}
 .contakt-info p {
 	text-align: center;
 	font-size: 90%;
-}
-
-.mobileButtons a#toggle_navigation {
-	background: white url(++theme++zettwerk.mobile/assets/1400610971_menu-24.png);
-	background-position: center;
-	background-repeat: no-repeat;
-}
-
-.mobileButtons a#toggle_search {
-	background: white url(++theme++zettwerk.mobile/assets/1400613794_11_Search.png);
-	background-position: center;
-	background-repeat: no-repeat;
 }
 
 input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0;*height:13px;*width:13px;}

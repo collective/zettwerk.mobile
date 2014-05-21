@@ -2,4 +2,5 @@
 <theme>
     <name>zettwerk.mobile</name>
     <enabled>false</enabled>
+   <disabled>true</disabled>
 </theme>
