@@ -1,6 +1,7 @@
 from Products.Five.browser import BrowserView
 from zope.component import getUtility
 from plone.registry.interfaces import IRegistry
+from urlparse import urlparse
 
 class JavaScript(BrowserView):
     
@@ -24,8 +25,10 @@ class JavaScript(BrowserView):
     def hostname(self):
         registry = getUtility(IRegistry)
         hostnames = registry[ 'zettwerk.mobile.interfaces.IMobileSettings.hostnames']
-        return hostnames[0] or 'mylocalhost'
-
+        url = hostnames[0] or 'mylocalhost'
+        o = urlparse(url)
+        return o.hostname
+    
     @property
     def tablets(self):
         return self.registry['zettwerk.mobile.interfaces.IMobileSettings.tablets']
