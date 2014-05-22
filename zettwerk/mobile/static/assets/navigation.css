@@ -1,21 +1,23 @@
- 
+/* @override http://localhost:8080/anotherPlone/++theme++zettwerk.mobile/++theme++zettwerk.mobile/assets/navigation.css */
+
 /* @group buttons */
 
 .mobileButtons {
-  position: absolute;
-  top: 0;
-  right: 0;
-  display: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: none;
 }
+
 .mobileButtons a {
-  width: 24px;
-  height: 24px;
-  padding: 16px;
-  display: block;
-  background: url(++resource++ftw.mobilenavigation/mobile_buttons.png) no-repeat center center #aaa;
-  float: right;
+	width: 24px;
+	height: 24px;
+	padding: 16px;
+	display: block;
+	background: url(++resource++ftw.mobilenavigation/mobile_buttons.png) no-repeat center center #aaa;
+	float: right;
+	border-left: 1px solid #333;
 }
- 
 
 /* @end group */
 
@@ -24,53 +26,49 @@
 div.slideNavi.loading,
 .globalnav,
 #portal-globalnav.mobileNavigation {
-  position:absolute;
-  top: 0;
-  display: none;
-  z-index: 5;
-  background: white;
-  padding-bottom: 13px;
+	position: absolute;
+	top: 0;
+	display: none;
+	z-index: 5;
+	background: white;
+	padding-bottom: 13px;
 }
 
-
 #portal-globalnav.mobileNavigation li {
-  display: block;
-  margin: 5px; 
-  position: relative;
-  border:  1px solid #aaa;
-  border-radius: 5px;
-  moz-border-radius: 5px;
-  background: linear-gradient(to bottom, #FFFFFF 0%, #E1E1E1 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+	display: block;
+	margin: 5px;
+	position: relative;
+	border: 1px solid #aaa;
+	border-radius: 5px;
+	moz-border-radius: 5px;
+	background: linear-gradient(to bottom, #FFFFFF 0%, #E1E1E1 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
 }
 
 #portal-globalnav.mobileNavigation li.expanded:hover {
-	  background: linear-gradient(to bottom, #FFFFFF 0%, #E1E1E1 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
-
+	background: linear-gradient(to bottom, #FFFFFF 0%, #E1E1E1 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
 }
 
 #portal-globalnav.mobileNavigation li.expanded a:hover {
-	color:  #000;
+	color: #000;
 	font-weight: bold;
 }
 
- 
 #portal-globalnav.mobileNavigation li a {
-  background: transparent;
-  padding: 10px 3%;
-  color: #333;
-  width: auto;
-  line-height: 20px;
-  font-size:120%;
-  display: block;
-
+	background: transparent;
+	padding: 10px 3%;
+	color: #333;
+	width: auto;
+	line-height: 20px;
+	font-size: 120%;
+	display: block;
 }
+
 #portal-globalnav.mobileNavigation li:hover {
-	  background: linear-gradient(to bottom, #DDD 0%, #777 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+	background: linear-gradient(to bottom, #DDD 0%, #777 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
 }
 
- 
 #portal-globalnav.mobileNavigation li a:hover {
-  color: #FFF;
+	color: #FFF;
 }
 
 .mobileButtons a#toggle_navigation {
@@ -90,95 +88,110 @@ div.slideNavi.loading,
 	background-position: center;
 	background-repeat: no-repeat;
 }
- 
+
 .globalnav li a.slide,
 .globalnav li.noChildren a,
 #portal-globalnav.mobileNavigation li.noChildren a,
 #portal-globalnav.mobileNavigation li a.loadChildren {
-  margin-right: 0;
+	margin-right: 0;
 }
- 
 
-#portal-globalnav.mobileNavigation li a.loadChildren  {
-background: url(++resource++ftw.mobilenavigation/expandme-navi.png) no-repeat center center;
-position: absolute;
- width: 60px;
- font-size: 1px;
- padding-left: 0;
- padding-right: 0;
- top:  0;
- right: 0px;
-      
- }
+#portal-globalnav.mobileNavigation li a.loadChildren {
+	background: url(++resource++ftw.mobilenavigation/expandme-navi.png) no-repeat center center;
+	position: absolute;
+	width: 60px;
+	font-size: 1px;
+	padding-left: 0;
+	padding-right: 0;
+	top: 0;
+	right: 0px;
+}
+
 #portal-globalnav.mobileNavigation li.expanded > a.loadChildren {
-  background: url(++resource++ftw.mobilenavigation/collapseme-navi.png) no-repeat center center;
-
+	background: url(++resource++ftw.mobilenavigation/collapseme-navi.png) no-repeat center center;
 }
+
 #portal-globalnav.mobileNavigation li.loading > a.loadChildren {
-  background: url(++resource++ftw.mobilenavigation/spinner.gif) no-repeat center center;
+	background: url(++resource++ftw.mobilenavigation/spinner.gif) no-repeat center center;
 }
+
 #portal-globalnav.mobileNavigation li > ul {
-  display: none;
+	display: none;
 }
+
 #portal-globalnav.mobileNavigation li.expanded > ul {
-  display: block;
+	display: block;
 }
- 
- 
-/* @end */
 
- 
+.mobileButtons {
+	display: block;
+	z-index: 4;
+}
 
-/* @group responsive */
-
-@media screen and (max-width: 769px) {
-  .mobileButtons {
-    display: block;
-    z-index: 4;
-  }
-  #portal-globalnav,
-  #portal-personaltools dt.actionMenuHeader,
-  #portal-searchbox {
-    display: none;
-    padding: 0;
-  }
+body.mobileNaviLoaded #portal-globalnav,
+body.mobileNaviLoaded  #portal-personaltools dt.actionMenuHeader,
+body.mobileNaviLoaded  #portal-searchbox {
+	display: none;
+	padding: 0;
+}
 
 ul#portal-globalnav.mobileNavigation {
 	width: 100%;
+	top: 65px;
 }
 
-  #portal-personaltools {
-    width: 100%;
-    position: absolute;
-    margin-top: 52px;
-    background-color: transparent;
-  }
-
-  #portal-personaltools a {
-    font-size: 150%;
-  }
-
-  #portal-searchbox {
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin-top: 54px;
-    background: #EEE;
-    z-index: 3;
-    padding: 1em;
-  }
+body.mobileNaviLoaded #portal-personaltools {
+	width: 100%;
+	position: absolute;
+	margin-top: 52px;
+	background-color: transparent;
 }
-@media screen and (min-width: 770px) {
-  /* fix navi (ugly) */
-ul#portal-globalnav.mobileNavigation  {
-    display: block;
-    
-  }
-  .globalnav,
+
+body.mobileNaviLoaded #portal-personaltools a {
+	font-size: 150%;
+}
+
+body.mobileNaviLoaded #portal-searchbox {
+	width: 100%;
+	background: #123456;
+	margin: 0;
+}
+
+body.mobileNaviLoaded div.searchSection {
+	display: none;
+}
+
+body.mobileNaviLoaded form#livesearch0 {
+	margin: 20px;
+}
+
+body.mobileNaviLoaded  #searchGadget {
+	font-size: 18px;
+	line-height: 40px;
+	padding-left: 5px;
+	border-radius: 8px;
+	margin: 0;
+}
+
+body.mobileNaviLoaded  .searchButton {
+	font-size: 24px;
+	height: 44px;
+	margin-left: 12px;
+	padding: 3px;
+}
+
+body.mobileNaviLoaded  div.LSBox {
+	padding: 10px;	
+	margin: 0;
+}
+
+ 
+body.mobileNaviLoaded #portal-globalnav,
+body.mobileNaviLoaded .globalnav,
 ul#portal-globalnav.mobileNavigation  > li.expanded > ul,
 ul#portal-globalnav.mobileNavigation  .loadChildren {
-    display: none ;
-  }
+	display: none;
+}
 }
 
 /* @end */
