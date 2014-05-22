@@ -16,8 +16,13 @@
       description="Installs the zettwerk.mobile package"
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
-  <!-- -*- extra stuff goes here -*- -->
+ 
 
   <plone:static type="theme" directory="static" />
+  
+    <utility
+  	provides="zope.schema.interfaces.IVocabularyFactory"
+    component="zettwerk.mobile.vocabularies.ThemeVocabulary"
+    name="ThemeVocabulary" />
 
 </configure>

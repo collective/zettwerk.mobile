@@ -17,10 +17,10 @@ class IMobileSettings(Interface):
         default=(u'http://localhost:8080',),
         )
 
-    themename = schema.TextLine(
+    themename =  schema.Choice(
+        vocabulary= "ThemeVocabulary",
         title=_('themename', 'Theme Name'),
         description=_('The name of the mobile theme.'),
-        default=u'zettwerk.mobile',
         )
 
     ipad = schema.Bool(
