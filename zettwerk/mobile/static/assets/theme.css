@@ -15,7 +15,7 @@
 body.mobileNaviLoaded {
 	background: white;	
 	font-family:Arial, Helvetica, sans-serif;
-
+	max-width: 768px;
 }
 
 body.mobileNaviLoaded #content {
