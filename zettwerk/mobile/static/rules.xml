@@ -14,8 +14,8 @@
     <before content='/html/head' theme='/html/head' />
 
 
-    <!-- Pull in Plone CSS and JS -->
-    <prepend content="/html/head/link | /html/head/style " theme="/html/head"/>
+    <!-- Pull in Plone CSS -->
+    <!--  prepend content="/html/head/link | /html/head/style " theme="/html/head"/ -->
 
     
     <!--content-->
