@@ -5,8 +5,21 @@ from zope.i18nmessageid import MessageFactory
 _ = MessageFactory(u"plone")
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 class IMobileSettings(Interface):
     """A theme, loaded from a resource directory
+    vocabulary='plone.app.vocabularies.Skins', is for old type skins
     """
 
     hostnames = schema.Tuple(
