@@ -34,6 +34,7 @@ class IMobileSettings(Interface):
         vocabulary= "ThemeVocabulary",
         title=_('themename', 'Theme Name'),
         description=_('The name of the mobile theme.'),
+        default="zettwerk.mobile",
         )
 
     ipad = schema.Bool(
