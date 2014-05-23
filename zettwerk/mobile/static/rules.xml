@@ -16,8 +16,24 @@
 
     <!-- Pull in Plone CSS -->
     <!--  prepend content="/html/head/link | /html/head/style " theme="/html/head"/ -->
-
-    
+   
+     <!-- Pull in Plone JS -->
+       
+    <!--before
+        content="/html/head/script"
+        theme-children="/html/head" />
+    <after
+        content="/html/head/base | /html/head/comment()"
+        theme-children="/html/head"
+        /-->
+ 
+ 
+       <!-- Personal tools -->
+      <replace
+        css:content="#portal-personaltools"
+        css:theme="#portal-personaltools"
+        />
+ 
     <!--content-->
 
         

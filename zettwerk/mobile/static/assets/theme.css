@@ -1,4 +1,7 @@
-/* @override http://localhost:8080/anotherPlone/++theme++zettwerk.mobile/++theme++zettwerk.mobile/assets/theme.css */
+/* @override 
+	http://localhost:8080/anotherPlone/++theme++zettwerk.mobile/++theme++zettwerk.mobile/assets/theme.css
+	http://localhost:8080/VocPloneasdfgsasdfasd/++theme++zettwerk.mobile/++theme++zettwerk.mobile/assets/theme.css
+*/
 
 /* Theme-specific styling
  */
@@ -45,7 +48,18 @@ a#portal-logo img {
 }
  
  
- 
+body.mobileNaviLoaded  dl#portal-personaltools {
+    background: white;
+	border:  1px solid #123456;
+	margin: 10px;
+	width: 270px;
+	padding: 0;
+	display: none;
+}
+
+body ul#portal-globalnav {
+	display: none;
+}
 
 
 #tabs li  {
