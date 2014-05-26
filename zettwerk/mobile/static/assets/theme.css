@@ -6,7 +6,10 @@
 /* Theme-specific styling
  */
 
- 
+.hiddenStructure {
+    
+ display: none;   
+}
  
 #toggle-navigation {position: absolute; left:12px; top: 12px}
  
@@ -47,14 +50,17 @@ a#portal-logo img {
 	width: auto;
 }
  
- 
-body.mobileNaviLoaded  dl#portal-personaltools {
+   #portal-personaltools dd.actionMenuContent {
     background: white;
 	border:  1px solid #123456;
 	margin: 10px;
 	width: 270px;
 	padding: 0;
 	display: none;
+}
+
+ul#portal-personaltools.actionMenu.deactivated{
+    display: none;
 }
 
 body ul#portal-globalnav {
@@ -87,13 +93,18 @@ body ul#portal-globalnav {
  
 
 /* searchbox */
-
+#portal-searchbox{
+ display: none;   
+}
 #searchbox input {
     padding: 9px 5%;
     width: 90%;
 }
 
-
+ul.LSTable   {
+   font-size:120%;
+    margn-bottom: 5px;
+}
 /* Footer */
 
 #footer {
