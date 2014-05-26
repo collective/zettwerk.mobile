@@ -25,7 +25,7 @@
 
 div.slideNavi.loading,
 .globalnav,
-#portal-globalnav.mobileNavigation {
+#portal-globalnav  {
 	position: absolute;
 	top: 0;
 	display: none;
@@ -34,7 +34,7 @@ div.slideNavi.loading,
 	padding-bottom: 13px;
 }
 
-#portal-globalnav.mobileNavigation li {
+#portal-globalnav li {
 	display: block;
 	margin: 5px;
 	position: relative;
@@ -44,16 +44,16 @@ div.slideNavi.loading,
 	background: linear-gradient(to bottom, #FFFFFF 0%, #E1E1E1 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
 }
 
-#portal-globalnav.mobileNavigation li.expanded:hover {
+#portal-globalnav   li.expanded:hover {
 	background: linear-gradient(to bottom, #FFFFFF 0%, #E1E1E1 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
 }
 
-#portal-globalnav.mobileNavigation li.expanded a:hover {
+#portal-globalnav li.expanded a:hover {
 	color: #000;
 	font-weight: bold;
 }
 
-#portal-globalnav.mobileNavigation li a {
+#portal-globalnav  li a {
 	background: transparent;
 	padding: 10px 3%;
 	color: #333;
@@ -63,11 +63,11 @@ div.slideNavi.loading,
 	display: block;
 }
 
-#portal-globalnav.mobileNavigation li:hover {
+#portal-globalnav   li:hover {
 	background: linear-gradient(to bottom, #DDD 0%, #777 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
 }
 
-#portal-globalnav.mobileNavigation li a:hover {
+#portal-globalnav   li a:hover {
 	color: #FFF;
 }
 
@@ -126,17 +126,26 @@ div.slideNavi.loading,
 .mobileButtons {
 	display: block;
 	z-index: 4;
+    list-style:none;
 }
 
-body.mobileNaviLoaded #portal-globalnav,
-body.mobileNaviLoaded  #portal-personaltools dt.actionMenuHeader,
-body.mobileNaviLoaded  #portal-searchbox {
+.mobileButtons li {
+    display: block;
+	float:right;
+}
+
+ #portal-globalnav,
+  #portal-personaltools dt.actionMenuHeader,
+  #portal-searchbox {
 	display: none;
 	padding: 0;
 }
 
-ul#portal-globalnav.mobileNavigation {
-	width: 100%;
+ul#portal-globalnav  {
+	left:0;
+    right:0;
+    margin:0 ;
+    padding:0;
 	top: 65px;
 }
 
@@ -151,21 +160,22 @@ body.mobileNaviLoaded #portal-personaltools a {
 	font-size: 150%;
 }
 
-body.mobileNaviLoaded #portal-searchbox {
+#portal-searchbox {
 	width: 100%;
-	background: #123456;
+	background: #EEEEEE;
 	margin: 0;
+ 
 }
 
-body.mobileNaviLoaded div.searchSection {
+ div.searchSection {
 	display: none;
 }
 
-body.mobileNaviLoaded form#livesearch0 {
+  form#livesearch0 {
 	margin: 20px;
 }
 
-body.mobileNaviLoaded  #searchGadget {
+   #searchGadget {
 	font-size: 18px;
 	line-height: 40px;
 	padding-left: 5px;
@@ -173,21 +183,21 @@ body.mobileNaviLoaded  #searchGadget {
 	margin: 0;
 }
 
-body.mobileNaviLoaded  .searchButton {
+   .searchButton {
 	font-size: 24px;
 	height: 44px;
 	margin-left: 12px;
 	padding: 3px;
 }
 
-body.mobileNaviLoaded  div.LSBox {
+    div.LSBox {
 	padding: 10px;	
 	margin: 0;
 }
 
  
-body.mobileNaviLoaded #portal-globalnav,
-body.mobileNaviLoaded .globalnav,
+ #portal-globalnav,
+ .globalnav,
 ul#portal-globalnav.mobileNavigation  > li.expanded > ul,
 ul#portal-globalnav.mobileNavigation  .loadChildren {
 	display: none;

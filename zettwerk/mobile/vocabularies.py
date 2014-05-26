@@ -3,22 +3,25 @@ from zope.schema.interfaces import IVocabularyFactory
 from zope.interface import directlyProvides
 from zope.i18nmessageid import MessageFactory
 
-from plone.app.theming import utils 
-
+#from plone.app.theming.utils import isValidThemeDirectory
+#from plone.app.theming.utils import getZODBThemes
+from plone.app.theming.utils import getAvailableThemes
 
 _ = MessageFactory('zettwerk.mobile')
  
-
-THEMES = ['zettwerk.mobile']
  
                    
 def ThemeVocabulary(context):
     """Get a list of all ITheme's available in resource directories and make a vocabulary.
     """
-
-    terms = [SimpleTerm(value=name,
-            token=name,
-            title=name) for name in THEMES]
+    
+    themes = getAvailableThemes()
+    
+    #import pdb; pdb.set_trace()
+    
+    terms = [SimpleTerm(value=theme.__name__,
+            token=theme.__name__,
+            title=theme.title) for theme in themes]
 
     return SimpleVocabulary(terms)
 

@@ -7,6 +7,7 @@ _ = MessageFactory(u"plone")
 
 class IMobileSettings(Interface):
     """A theme, loaded from a resource directory
+    vocabulary='plone.app.vocabularies.Skins', is for old type skins
     """
 
     hostnames = schema.Tuple(
@@ -18,7 +19,7 @@ class IMobileSettings(Interface):
         )
 
     themename =  schema.Choice(
-        vocabulary= "ThemeVocabulary",
+        vocabulary= 'ThemeVocabulary',
         title=_('themename', 'Theme Name'),
         description=_('The name of the mobile theme.'),
         )
