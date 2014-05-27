@@ -1,0 +1,24 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="zettwerk.mobile">
+
+  <genericsetup:registerProfile
+      name="default"
+      title="zettwerk.mobile"
+      directory="profiles/default"
+      description="Installs the zettwerk.mobile package"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+
+  <genericsetup:registerProfile
+      name="uninstall"
+      title="zettwerk.mobile - Uninstall"
+      directory="profiles/uninstall"
+      description="Removes zettwerk.mobile packe"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+
+</configure>

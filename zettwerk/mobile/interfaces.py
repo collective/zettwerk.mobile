@@ -18,10 +18,11 @@ class IMobileSettings(Interface):
         default=(u'http://localhost:8080',),
         )
 
-    themename =  schema.Choice(
-        vocabulary= 'ThemeVocabulary',
+    themename = schema.Choice(
+        vocabulary='ThemeVocabulary',
         title=_('themename', 'Theme Name'),
         description=_('The name of the mobile theme.'),
+        default='plone.mobile'
         )
 
     ipad = schema.Bool(
@@ -32,6 +33,7 @@ class IMobileSettings(Interface):
 
     tablets = schema.Bool(
         title=_('tablets', 'Redirect Other Tablets'),
-        description=_('Set to false to not redirect on other tablets (Android , BlackBerry, WebOS tablets)'),
+        description=_('Set to false to not redirect on other ' \
+                      'tablets (Android , BlackBerry, WebOS tablets)'),
         default=False,
         )

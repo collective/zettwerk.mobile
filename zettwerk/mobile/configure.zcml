@@ -8,21 +8,13 @@
 
   <five:registerPackage package="." initialize=".initialize" />
   <include package=".browser" />
-
-  <genericsetup:registerProfile
-      name="default"
-      title="zettwerk.mobile"
-      directory="profiles/default"
-      description="Installs the zettwerk.mobile package"
-      provides="Products.GenericSetup.interfaces.EXTENSION"
-      />
- 
+  <include file="profiles.zcml" />
 
   <plone:static type="theme" directory="static" />
-  
-    <utility
-  	provides="zope.schema.interfaces.IVocabularyFactory"
-    component="zettwerk.mobile.vocabularies.ThemeVocabulary"
-    name="ThemeVocabulary" />
+
+  <utility
+      provides="zope.schema.interfaces.IVocabularyFactory"
+      component="zettwerk.mobile.vocabularies.ThemeVocabulary"
+      name="ThemeVocabulary" />
 
 </configure>
