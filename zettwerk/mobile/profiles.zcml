@@ -12,13 +12,4 @@
       />
 
 
-  <genericsetup:registerProfile
-      name="uninstall"
-      title="zettwerk.mobile - Uninstall"
-      directory="profiles/uninstall"
-      description="Removes zettwerk.mobile packe"
-      provides="Products.GenericSetup.interfaces.EXTENSION"
-      />
-
-
 </configure>
