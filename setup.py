@@ -16,7 +16,7 @@ long_description = (
 
 setup(name='zettwerk.mobile',
       version=version,
-      description="",
+      description="a jquery.mobile based theme for plone.",
       long_description=long_description,
       # Get more strings from
       # http://pypi.python.org/pypi?%3Aaction=list_classifiers
