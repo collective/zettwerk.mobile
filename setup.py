@@ -1,7 +1,7 @@
+# -*- coding: utf-8 -*-
 from setuptools import setup, find_packages
-import os
 
-version = '1.0'
+version = '0.1'
 
 long_description = (
     open('README.txt').read()
@@ -21,12 +21,13 @@ setup(name='zettwerk.mobile',
       # Get more strings from
       # http://pypi.python.org/pypi?%3Aaction=list_classifiers
       classifiers=[
+        "Framework :: Plone",
         "Programming Language :: Python",
         ],
-      keywords='',
-      author='',
-      author_email='',
-      url='http://svn.plone.org/svn/collective/',
+      keywords='plone, theme, jquery, jquery.mobile',
+      author='Jörg Kubaile / zettwerk GmbH',
+      author_email='jk@zettwerk.com',
+      url='https://github.com/collective/zettwerk.mobile',
       license='gpl',
       packages=find_packages(),
       namespace_packages=['zettwerk'],
