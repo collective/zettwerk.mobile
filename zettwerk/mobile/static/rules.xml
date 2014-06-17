@@ -11,10 +11,18 @@
 
   <after content="/html/head/meta" theme-children="/html/head" />
 
-  <after
-      content="/html/head/script"
-      theme-children="/html/head"
-      />
+  <!-- default jquery.mobile theme -->
+  <before theme-children="html/head/meta" if="$mobile_theme = 'default'">
+    <link rel="stylesheet" href="++theme++zettwerk.mobile/jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.css" />
+  </before>
+  <!-- custom theme -->
+  <before theme-children="html/head/meta" if="$mobile_theme != 'default'">
+    <link rel="stylesheet" href="++zettwerkmobile++{$mobile_theme}/themes/{$mobile_theme}.min.css" />
+    <link rel="stylesheet" href="++zettwerkmobile++{$mobile_theme}/themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="++theme++zettwerk.mobile/jquery.mobile-1.4.2/jquery.mobile.structure-1.4.2.min.css" />
+  </before>
+
+  <after content="/html/head/script" theme-children="/html/head" />
 
   <merge attributes="class" css:content="body" css:theme="body" />
   <copy attributes="id dir" css:content="body" css:theme="body" />
