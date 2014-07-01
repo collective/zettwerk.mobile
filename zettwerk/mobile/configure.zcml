@@ -20,11 +20,4 @@
       factory="zettwerk.mobile.traversal.Traverser"
   />
 
-  <genericsetup:importStep
-      name="zettwerk.mobile-various"
-      title="Zettwerk Mobile various"
-      description=""
-      handler="zettwerk.mobile.setuphandler.import_various"
-      />
-
 </configure>
