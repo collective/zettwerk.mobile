@@ -36,7 +36,7 @@ setup(name='zettwerk.mobile',
       install_requires=[
           'setuptools',
           # -*- Extra requirements: -*-
-          'zettwerk.mobiletheming',
+          'zettwerk.mobiletheming>=0.2',
       ],
       extras_require={'test': ['plone.app.testing']},
       entry_points="""
