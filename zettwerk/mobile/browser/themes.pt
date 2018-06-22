@@ -41,7 +41,7 @@
                   tal:attributes="value theme;
                                   selected python:['', 'selected'][theme == view.active_theme]"
                   >Theme</option>
-        </tal:blocK>
+        </tal:block>
       </select>
 
       <br /><br />
