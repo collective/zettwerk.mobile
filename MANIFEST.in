@@ -1,4 +1,5 @@
 recursive-include zettwerk *
 include *.txt
+include *.rst
 global-exclude *pyc
 graft docs
