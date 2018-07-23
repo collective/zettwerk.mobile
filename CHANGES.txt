@@ -4,6 +4,7 @@ Changelog
 0.2.2 (unreleased)
 ------------------
 
+- Added the GenericSetup uninstall profile [macagua]
 - Added more strings classifiers items for the metadata package [macagua]
 - Added more improvements about README file [macagua]
 - Updated the translations files [macagua]

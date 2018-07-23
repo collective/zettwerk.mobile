@@ -27,6 +27,7 @@ Features
 - Provides the `Diazo`_ rules for *zettwerk.mobile* theme.
 - It's an installable `Plone`_ package.
 - After installation from ``Add-ons`` control panel, this package is enabled automatically.
+- It's have support for clean uninstallation.
 
 
 Examples
