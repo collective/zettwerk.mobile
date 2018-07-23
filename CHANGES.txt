@@ -4,6 +4,7 @@ Changelog
 0.2.2 (unreleased)
 ------------------
 
+- Updated the translations files [macagua]
 - Added more improvements about i18n [macagua]
 - Added POT Gettext file [macagua]
 - Fixed Unexpected end tag. - String: '</tal:blocK>' error [macagua]

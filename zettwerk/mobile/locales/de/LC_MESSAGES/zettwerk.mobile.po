@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2014-06-17 08:33+0000\n"
+"POT-Creation-Date: 2018-07-23 00:22+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,39 +14,51 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: DOMAIN\n"
 
-#: ./../browser/themes.pt:35
+#: ../browser/themes.pt:35
 msgid "Choose active theme"
 msgstr "Aktives Theme auswählen"
 
-#: ./../browser/themes.pt:37
+#: ../browser/themes.pt:37
 msgid "Default"
 msgstr "Standard"
 
-#: ./../browser/themes.pt:24
+#: ../browser/themes.pt:24
 msgid "Here you can upload jquery.mobile's themeroller based themes. Create a Thema via the <a href=\"http://themeroller.jquerymobile.com/\" target=\"_blank\">Themeroller</a> and download the theme to your local drive. Then upload it via the form below. The name you entered in the themeroller will be taken as theme name for zettwerk.mobile."
 msgstr "Hier können Themeroller basierte jquery.mobile Themes hochgeladen werden. Mit dem <a href=\"http://themeroller.jquerymobile.com/\" target=\"_blank\">Themeroller</a> erstellte und heruntergeladene Themes können von der lokalen Platte über nachfolgendes Formular hochgeladen werden. Der im Themeroller angegebene Theme-Name wird auch als Name für zettwerk.mobile verwendet."
 
-#: ./../browser/themes.py:84
+#: ../profiles.zcml:14
+msgid "Installs the zettwerk.mobile package"
+msgstr ""
+
+#: ../browser/themes.py:80
 msgid "Invalid Zipfile"
 msgstr "Ungültige Zipdatei"
 
-#: ./../browser/themes.pt:48
+#: ../browser/themes.pt:48
 msgid "Save settings"
 msgstr "Einstellungen speichern"
 
-#: ./../interfaces.py:12
+#: ../interfaces.py:10
 msgid "The name of the mobile theme."
 msgstr "Name des mobilen Themes."
 
-#: ./../browser/themes.pt:31
+#: ../browser/themes.pt:31
 msgid "Upload new theme"
 msgstr "Neues Theme hochladen"
 
 #. Default: "Theme Name"
-#: ./../interfaces.py:11
+#: ../interfaces.py:9
 msgid "themename"
 msgstr "Name des Themes"
 
-#: ./../browser/themes.pt:23
+#: ../profiles.zcml:14
+msgid "zettwerk.mobile"
+msgstr "zettwerk.mobile"
+
+#: ../profiles/default/controlpanel.xml
+msgid "zettwerk.mobile Themes"
+msgstr ""
+
+#: ../browser/themes.pt:23
 msgid "zettwerk.mobile: jquery.mobile based theme selection"
 msgstr "zettwerk.mobile: jquery.mobile basierte Themen-Auswahl"
