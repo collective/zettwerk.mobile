@@ -141,8 +141,21 @@ directory with following resources files:
 Usage
 =====
 
-Go to the plone control panel to ``Mobile theming`` panel (from ``zettwerk.mobiletheming`` 
-package) and set up a hostname, under which the theme should be applied.
+Install ``zettwerk.mobile`` and ``zettwerk.mobiletheming`` via ``portal_quickinstaller`` tool.
+
+Them two new control panels entries makes it possible to change settings as the following:
+
+.. image:: https://github.com/collective/zettwerk.mobile/raw/master/docs/screenshot1.png
+  :alt: Add-on Configuration
+  :align: center
+
+Go to the ``Site setup`` control panel, them go to ``Add-on Configuration`` at ``Mobile theming`` 
+panel (from ``zettwerk.mobiletheming`` package). There you need set up a ``hostname``, under which 
+the theme should be applied.
+
+.. image:: https://github.com/collective/zettwerk.mobiletheming/raw/master/docs/screenshot1.png
+  :alt: Mobile Theming Control Panel
+  :align: center
 
 
 Themes
@@ -151,6 +164,10 @@ Themes
 There is support for *jquery.mobile* based themes. Just open the themeroller 
 and create your theme. Then download and upload it in the ``zettwerk.mobile Themes`` 
 Control panel.
+
+.. image:: https://github.com/collective/zettwerk.mobile/raw/master/docs/screenshot2.png
+  :alt: zettwerk.mobile Themes Control Panel
+  :align: center
 
 
 Contribute
@@ -171,7 +188,7 @@ License
 =======
 
 - The project is licensed under the GPLv2.
-- The *jQuery Mobile* project v1.4.2  is licensed under the MIT.
+- The *jQuery Mobile* project v1.4.2 is licensed under the MIT.
 
 
 Credits
