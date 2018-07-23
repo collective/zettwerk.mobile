@@ -8,6 +8,10 @@ Introduction
 
 Apply `jQuery Mobile`_ (jquery.mobile library) based themes to Plone.
 
+``zettwerk.mobile`` package contains the following diazo implementations: 
+
+- **zettwerk.mobile theme**, a diazo theme based for *jquery.mobile* library.
+
 
 Requirements
 ============
@@ -21,6 +25,8 @@ Features
 
 - Provides the *jQuery Mobile* v1.4.2 resources.
 - Provides the `Diazo`_ rules for *zettwerk.mobile* theme.
+- It's an installable `Plone`_ package.
+- After installation from ``Add-ons`` control panel, this package is enabled automatically.
 
 
 Examples
@@ -185,5 +191,6 @@ You can find an updated list of package contributors on https://github.com/colle
 .. _`jQuery Mobile`: https://jquerymobile.com/
 .. _`A zettwerk.mobile example integrates with a PhoneGap App`: https://www.youtube.com/watch?v=Q2ID86XkiQQ
 .. _`A zettwerk.mobile example with ThemeRoller support`: https://www.youtube.com/watch?v=s7n0IMjltzU
+.. _`Plone`: http://plone.org
 .. _`Diazo`: http://diazo.org
 .. _`our Issue Tracker`: https://github.com/collective/zettwerk.mobile/issues
