@@ -6,8 +6,9 @@
     <configlet title="zettwerk.mobile Themes" action_id="zettwerkmobile" appId="zettwerkmobile"
         category="Products" condition_expr=""
         url_expr="string:${portal_url}/@@theme-upload" visible="True"
-	icon_expr="string:${portal_url}/++resource++zettwerk.mobiletheming.images/z.png"
+        icon_expr="string:${portal_url}/++resource++zettwerk.mobiletheming.images/z.png"
         i18n:attributes="title">
         <permission>Manage portal</permission>
     </configlet>
+
 </object>
