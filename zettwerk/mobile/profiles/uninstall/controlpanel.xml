@@ -4,7 +4,7 @@
     i18n:domain="zettwerk.mobile">
 
     <configlet 
-    	action_id="zettwerkmobile" appId="zettwerkmobile"
+        action_id="zettwerkmobile" appId="zettwerkmobile"
         remove="True" delete="True">
         <permission>Manage portal</permission>
     </configlet>
