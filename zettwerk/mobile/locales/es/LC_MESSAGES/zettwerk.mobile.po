@@ -35,6 +35,10 @@ msgstr "Aquí puede cargar temas basados ThemeRoller de jquery.mobile. Crear un 
 msgid "Installs the zettwerk.mobile package"
 msgstr "Instalar el paquete zettwerk.mobile"
 
+#: ../profiles.zcml:20
+msgid "Uninstalls zettwerk.mobile package"
+msgstr "Deinstalar el paquete zettwerk.mobile"
+
 #: ../browser/themes.py:80
 msgid "Invalid Zipfile"
 msgstr "Archivo .zip invalido"
@@ -59,6 +63,10 @@ msgstr "Nombre de Tema"
 #: ../profiles.zcml:14
 msgid "zettwerk.mobile"
 msgstr "zettwerk.mobile"
+
+#: ../profiles.zcml:14
+msgid "zettwerk.mobile - Uninstall"
+msgstr "zettwerk.mobile - Deinstalar"
 
 #: ../profiles/default/controlpanel.xml
 msgid "zettwerk.mobile Themes"
