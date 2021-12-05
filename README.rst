@@ -209,6 +209,6 @@ You can find an updated list of package contributors on https://github.com/colle
 .. _`jQuery Mobile`: https://jquerymobile.com/
 .. _`A zettwerk.mobile example integrates with a PhoneGap App`: https://www.youtube.com/watch?v=Q2ID86XkiQQ
 .. _`A zettwerk.mobile example with ThemeRoller support`: https://www.youtube.com/watch?v=s7n0IMjltzU
-.. _`Plone`: http://plone.org
-.. _`Diazo`: http://diazo.org
+.. _`Plone`: https://plone.org
+.. _`Diazo`: https://diazo.org
 .. _`our Issue Tracker`: https://github.com/collective/zettwerk.mobile/issues
